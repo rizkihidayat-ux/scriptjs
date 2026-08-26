@@ -1,0 +1,95 @@
+
+body{
+    margin: auto;
+    
+}
+body {
+    background-color:rgb(245, 248, 245);
+    color:rgb(0, 0, 0);
+    padding: 10px;
+    min-height: 100vh;
+}
+header {
+    background-color: rgb(0, 255, 204);
+    color:aliceblue;
+    padding: 10px;
+}
+footer {
+   background-color: rgb(0, 255, 204);
+   padding: 50px;
+   color: rgb(5, 6, 5);
+
+}
+section {
+    border: 1px solid rgb(20, 20, 20);
+    padding: 15px;
+    margin: 10px;
+}
+body.dark-mode {
+     background-color: #352828; 
+     color: #fcf2f2;
+    
+}
+#app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Header, status, dan tombol mode memenuhi lebar */
+#app > h2,
+#app > #status,
+#app > #toggleTema {
+    grid-column: 1 / -1;
+}
+
+#app > section {
+    margin: 0;
+    width: auto;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #1683e8;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+button:hover {
+    background-color: #0d6fc7;
+}
+
+body.dark-mode button {
+    background-color: #1683e8;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: #0d6fc7;
+}
+
+#app > section:nth-of-type(1) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#app > section:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#app > section:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#app > section:nth-of-type(4) {
+    grid-column: 1;
+    grid-row: 2;
+}
